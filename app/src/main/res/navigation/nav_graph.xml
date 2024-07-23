@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMapFragment">
+
+    <fragment
+        android:id="@+id/mainMapFragment"
+        android:name="com.example.mosisproject.MainMapFragment"
+        android:label="fragment_main_map"
+        tools:layout="@layout/fragment_main_map" >
+        <action
+            android:id="@+id/action_mainMapFragment_to_addQuestionFragment"
+            app:destination="@id/addQuestionFragment" />
+        <action
+            android:id="@+id/action_mainMapFragment_to_questionListFragment"
+            app:destination="@id/questionListFragment" />
+        <action
+            android:id="@+id/action_mainMapFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+        <action
+            android:id="@+id/action_mainMapFragment_to_usersListFragment"
+            app:destination="@id/usersListFragment" />
+        <action
+            android:id="@+id/action_mainMapFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addQuestionFragment"
+        android:name="com.example.mosisproject.AddQuestionFragment"
+        android:label="fragment_add_question"
+        tools:layout="@layout/fragment_add_question" >
+        <action
+            android:id="@+id/action_addQuestionFragment_to_mainMapFragment"
+            app:destination="@id/mainMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionListFragment"
+        android:name="com.example.mosisproject.QuestionListFragment"
+        android:label="fragment_question_list"
+        tools:layout="@layout/fragment_question_list" >
+        <action
+            android:id="@+id/action_questionListFragment_to_mainMapFragment"
+            app:destination="@id/mainMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.example.mosisproject.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="com.example.mosisproject.UsersListFragment"
+        android:label="fragment_users_list"
+        tools:layout="@layout/fragment_users_list" >
+        <action
+            android:id="@+id/action_usersListFragment_to_mainMapFragment"
+            app:destination="@id/mainMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mosisproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MOSIS project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="questionCategory">
+        <item>Sport</item>
+        <item>History</item>
+        <item>Music</item>
+        <item>Geography</item>
+        <item>Science</item>
+        <item>Art</item>
+    </string-array>
+    <string-array name="questionDifficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

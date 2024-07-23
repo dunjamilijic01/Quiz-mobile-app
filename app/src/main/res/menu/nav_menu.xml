@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/item1">
+        <item android:id="@+id/nav_homeMap"
+            android:title="Map"
+            android:icon="@drawable/baseline_map_24" />
+        <item android:id="@+id/nav_addQuestion"
+            android:title="Add Question"
+            android:icon="@drawable/baseline_add_24"/>
+        <item android:id="@+id/nav_listQuestion"
+            android:title="Question list"
+            android:icon="@drawable/baseline_menu_24"/>
+        <item android:id="@+id/nav_rankList"
+            android:title="Rank list"
+            android:icon="@drawable/baseline_format_list_numbered_24"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/baseline_person_24"/>
+
+        <item android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/baseline_logout_24"/>
+    </group>
+
+
+</menu>
